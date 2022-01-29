@@ -346,6 +346,42 @@ body.light-theme {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: myfont;
+  src: url("/assets/fonts/Antro_Vectra.otf");
+}
+
+.home__signature {
+  justify-self: center;
+  margin-top: 50px;
+  font-size: 45px;
+  font-family: myfont;
+  color: #c6e2ff;
+  animation: neon 0.08s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
+}
+
+
 .home__button {
   display: flex;
   justify-content: center;
@@ -518,11 +554,11 @@ body.light-theme {
 }
 
 .html-icon {
-  color: #E44D26;
+  color: #e44d26;
 }
 
 .bootstrap-icon {
-  color: #760FF0;
+  color: #760ff0;
 }
 
 .git-icon {
@@ -530,23 +566,23 @@ body.light-theme {
 }
 
 .css-icon {
-  color: #264DE4;
+  color: #264de4;
 }
 
 .javascript-icon {
-  color: #EFD81D;
+  color: #efd81d;
 }
 
 .react-icon {
-  color: #5ED3F3;
+  color: #5ed3f3;
 }
 
 .node-icon {
-  color: #74AC5F;
+  color: #74ac5f;
 }
 
 .mongo-icon {
-  color: #00F265;
+  color: #00f265;
 }
 
 .express-icon {
@@ -855,6 +891,10 @@ body.light-theme {
   .work__filter {
     column-gap: 0.25rem;
   }
+
+  .home__signature {
+    display: block;
+  }
 }
 /* For medium devices */
 
@@ -893,6 +933,10 @@ body.light-theme {
     width: 360px;
     margin: 0 auto;
   }
+
+  .home__signature {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -905,6 +949,10 @@ body.light-theme {
     justify-content: center;
     column-gap: 3rem;
   }
+
+  .home__signature {
+    display: block;
+  }
 }
 
 /* For large devices */
@@ -913,6 +961,10 @@ body.light-theme {
   .container {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .home__signature {
+    display: none;
   }
 
   .section {
@@ -981,18 +1033,18 @@ body.light-theme {
     column-gap: 1.5rem;
   }
 
-  .work__container{
-    gap: 3rem
+  .work__container {
+    gap: 3rem;
   }
 
-  .work__img{
+  .work__img {
     margin-bottom: 1rem;
   }
 
   .work__title {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
-  
+
   .contact__container {
     column-gap: 6rem;
   }
