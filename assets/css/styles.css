@@ -351,15 +351,6 @@ body.light-theme {
   src: url("/assets/fonts/Antro_Vectra.otf");
 }
 
-.home__signature {
-  justify-self: center;
-  margin-top: 50px;
-  font-size: 45px;
-  font-family: myfont;
-  color: #c6e2ff;
-  animation: neon 0.08s ease-in-out infinite alternate;
-}
-
 @keyframes neon {
   from {
     text-shadow:
@@ -892,9 +883,6 @@ body.light-theme {
     column-gap: 0.25rem;
   }
 
-  .home__signature {
-    display: block;
-  }
 }
 /* For medium devices */
 
@@ -934,9 +922,6 @@ body.light-theme {
     margin: 0 auto;
   }
 
-  .home__signature {
-    display: block;
-  }
 }
 
 @media screen and (min-width: 767px) {
@@ -950,9 +935,6 @@ body.light-theme {
     column-gap: 3rem;
   }
 
-  .home__signature {
-    display: block;
-  }
 }
 
 /* For large devices */
@@ -961,10 +943,6 @@ body.light-theme {
   .container {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .home__signature {
-    display: none;
   }
 
   .section {
